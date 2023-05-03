@@ -1,13 +1,36 @@
 export default {
     async allAPI() {
         try {
+            
+            const cursor = $('.cursor');
+
+            function moveCursor(e) {
+              cursor.addClass('is-moving');
+              
+              gsap.to(cursor, {
+                duration: 0.23,
+                left: e.pageX,
+                top: e.pageY,
+                ease: 'power4.out'
+              });
+              
+              clearTimeout(timer);
+            
+              const timer = setTimeout(function() {
+                cursor.removeClass('is-moving');
+              }, 300);
+            }
+            
+            $(document).on('mousemove', moveCursor);
+
+(window).on('mousemove', moveCursor);
             /* DOM selections */
             
             /* Variables */
             const country = 'us';
             /* API settings */
             const apiKey = `084e0cc135174cb4bad811a6571ae62a`
-            let urlNews = await fetch(`https://newsapi.org/v2/top-headlines?pageSize=100&country=${country}&apiKey=${apiKey}`);
+            let urlNews = await fetch(`https://newsapi.org/v2/top-headlines?pageSize=100&country={country}&apiKey=${apiKey}`);
             const responseJson = await urlNews.json();
         
             /* Templates */

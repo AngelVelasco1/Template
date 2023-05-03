@@ -7,25 +7,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Title</title>
     <script src="main.js" type="module" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
     <link rel="stylesheet" href="./styles/style.css">
 </head>
 
 <body>
- 
+    <div class="cursor"></div>
+
     <div id="wrapper">
         <!-- Nav -->
         <nav id="navbar">
-                <a id="logo-nav" href="index.html">Angel<span>Template</span></a>
-                <ul>
-                    <li><a href="">Home</a></li>
-                    <li><a href="">About</a></li>
-                    <li><a href="">Services</a></li>
-                    <li><a href="">Portfolio</a></li>
-                    <li><a href="">Contact</a></li>
-                </ul>
+            <a id="logo-nav" href="index.html">Angel<span>Template</span></a>
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Services</a></li>
+                <li><a href="">Portfolio</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
         </nav>
 
-  <!-- Mobile nav -->
+        <!-- Mobile nav -->
         <nav id="mobile-nav">
             <img id="hamburguer" src="./sources/hamburguer.svg" alt="">
 
@@ -64,59 +67,104 @@
 
         </header>
         <!-- Main -->
-
+        <main id="main">
+            <h1 class="lg-title">Recent Articles</h1>
+            <div class="container">
+                <div class="sec-item">
+                    <div class="item-top">
+                        <a href="#" class="md-title">sketch and learn in no-time</a>
+                        <p class="text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius nulla hic vel!
+                            Ipsum, assumenda fugit.</p>
+                    </div>
+                    <div class="item-bottom">
+                        <img src="./sources/html-5.png">
+                    </div>
+                </div>
+                <div class="sec-item">
+                    <div class="item-bottom">
+                        <img src="./sources/html-5.png">
+                    </div>
+                    <div class="item-top">
+                        <a href="#" class="md-title">learn how to shoot amazing pictures</a>
+                        <p class="text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius nulla hic vel!
+                            Ipsum, assumenda fugit.</p>
+                    </div>
+                   
+                </div>
+                <div class="sec-item">
+                    <div class="item-top">
+                        <a href="#" class="md-title">cool office setup ideas</a>
+                        <p class="text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius nulla hic vel!
+                            Ipsum, assumenda fugit.</p>
+                    </div>
+                    <div class="item-bottom">
+                        <img src="./sources/html-5.png">
+                    </div>
+                </div>
+            </div>
+        </main>
         <!-- Section Cards -->
         <section id="services">
             <div class="services-card">
                 <div class="card">
                     <img src="./sources/html-5.png" alt="">
                     <h2>HTML</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam repellendus a, minus perferendis autem ex libero alias soluta pariatur atque ullam deleniti officia error sed consectetur eius magni eaque fugiat.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam repellendus a, minus perferendis
+                        autem ex libero alias soluta pariatur atque ullam deleniti officia error sed consectetur eius
+                        magni eaque fugiat.</p>
                 </div>
                 <div class="card">
                     <img src="./sources/html-5.png" alt="">
                     <h2>CSS</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam repellendus a, minus perferendis autem ex libero alias soluta pariatur atque ullam deleniti officia error sed consectetur eius magni eaque fugiat.</p>                </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam repellendus a, minus perferendis
+                        autem ex libero alias soluta pariatur atque ullam deleniti officia error sed consectetur eius
+                        magni eaque fugiat.</p>
+                </div>
                 <div class="card">
                     <img src="./sources/html-5.png" alt="">
                     <h2>JAVASCRIPT</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam repellendus a, minus perferendis autem ex libero alias soluta pariatur atque ullam deleniti officia error sed consectetur eius magni eaque fugiat.</p>                </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam repellendus a, minus perferendis
+                        autem ex libero alias soluta pariatur atque ullam deleniti officia error sed consectetur eius
+                        magni eaque fugiat.</p>
+                </div>
             </div>
         </section>
         <!-- Section... -->
 
         <!-- Section... -->
-            <!-- Footer -->
 
     </div>
+    <!-- Footer -->
 
-        <footer>
-            <div id="footer-container">
-                <div class="footer-box">
-                    <div class="logo">
-                        <img src="./sources/texto.png" alt="">
-                    </div>
-                    <div class="terms">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, sed excepturi. Vel voluptatum quaerat eos cumque amet accusamus magnam porro quas beatae quo, velit asperiores recusandae dicta assumenda eveniet possimus!</p>
-                    </div>
+    <footer>
+        <div id="footer-container">
+            <div class="footer-box">
+                <div class="logo">
+                    <img src="./sources/texto.png" alt="">
                 </div>
-                <div class="footer-box">
-                    <h2>Social Networks</h2>
-                    <a href="">Facebook</a>
-                    <a href="">Twitter</a>
-                    <a href="">Instagram</a>
-                    <a href="">LinkedIn</a>
-                </div>
-                <div class="footer-box">
-                    <h2>All</h2>
-                    <a href="">About</a>
-                    <a href="">Services</a>
-                    <a href="">Portfolio</a>
-                    <a href="">Contact</a>
+                <div class="terms">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, sed excepturi. Vel
+                        voluptatum quaerat eos cumque amet accusamus magnam porro quas beatae quo, velit asperiores
+                        recusandae dicta assumenda eveniet possimus!</p>
                 </div>
             </div>
-        </footer>
-   
+            <div class="footer-box">
+                <h2>Social Networks</h2>
+                <a href="">Facebook</a>
+                <a href="">Twitter</a>
+                <a href="">Instagram</a>
+                <a href="">LinkedIn</a>
+            </div>
+            <div class="footer-box">
+                <h2>All</h2>
+                <a href="">About</a>
+                <a href="">Services</a>
+                <a href="">Portfolio</a>
+                <a href="">Contact</a>
+            </div>
+        </div>
+    </footer>
+
 </body>
 
 </html>
